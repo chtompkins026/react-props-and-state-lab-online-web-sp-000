@@ -14,6 +14,15 @@ class App extends React.Component {
       }
     }
   }
+  
+  onChangeType = event => {
+    this.setState({
+      filters: {
+        ...this.state.filters,
+        type: event
+      }
+    });
+  };
 
   render() {
     return (
